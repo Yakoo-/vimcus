@@ -8,6 +8,7 @@ nnoremap F :pwd<Enter>
 " for label operation
 nnoremap ti :tabe<Enter>
 nnoremap tt gt
+nnoremap tr gT
 
 " browsing code easily
 nnoremap 8 2<C-E>
