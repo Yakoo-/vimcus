@@ -19,6 +19,11 @@ nnoremap <F9> <C-i>
 nnoremap <F12> g<C-]>
 nnoremap <F10> <C-o>
 
+" auto completion
+inoremap ){ ){}<left><Enter><Esc>O
+inoremap { {}<left><Enter><Esc>O
+
+
 " for Taglist
 map <silent> <F7> :TlistToggle<cr>
 
