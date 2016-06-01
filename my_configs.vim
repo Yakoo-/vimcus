@@ -21,7 +21,7 @@ nnoremap <F10> <C-o>
 
 " auto completion
 inoremap ){ ){}<left><Enter><Esc>O
-inoremap { {}<left><Enter><Esc>O
+inoremap { {}<left>
 
 
 " for Taglist
@@ -36,7 +36,6 @@ set cursorline
 
 " display line number
 set nu
-set rnu
 
 " colorscheme
 set t_Co=256
