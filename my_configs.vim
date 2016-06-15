@@ -11,6 +11,7 @@ nnoremap tt gt
 nnoremap tr gT
 
 " browsing code easily
+nnoremap 7 2<C-E>
 nnoremap 8 2<C-E>
 nnoremap 9 2<C-Y>
 
