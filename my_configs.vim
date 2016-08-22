@@ -42,4 +42,6 @@ set nu
 set t_Co=256
 colorscheme wombat256mod
 
-
+" disable Ex mode
+map q: <Nop>
+nnoremap Q <Nop>
