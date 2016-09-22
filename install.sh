@@ -9,7 +9,7 @@ then
     git clone https://github.com/amix/vimrc.git ${vimrtdir} 
     git clone https://github.com/vim-scripts/taglist.vim ${vimrtdir}/sources_non_forked/vim-taglist
     git clone https://github.com/vim-scripts/wombat256.vim ${vimrtdir}/sources_non_forked/vim-wombat256
-    mv ~/.vim_runtime/sources_non_forked/syntastic ${vimrtdir}/
+    git clone https://github.com/Raimondi/delimitMate.git ${vimrtdir}/sources_non_forked/delimitMate
 fi
 
 sh ${vimrtdir}/install_awesome_vimrc.sh

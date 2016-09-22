@@ -12,8 +12,8 @@ nnoremap tr gT
 
 " browsing code easily
 nnoremap 7 2<C-E>
-nnoremap 8 2<C-E>
-nnoremap 9 2<C-Y>
+nnoremap 8 3<C-E>
+nnoremap 9 3<C-Y>
 
 " browsing tags easily
 nnoremap <F9> <C-i>
@@ -22,11 +22,11 @@ nnoremap <F10> <C-o>
 
 " auto completion
 inoremap ){ ){}<left><Enter><Esc>O
-inoremap { {}<left>
 
 
 " for Taglist
 map <silent> <F7> :TlistToggle<cr>
+map <silent> <C-T> :TlistToggle<cr>
 
 nnoremap C C<Esc>
 
@@ -45,3 +45,13 @@ colorscheme wombat256mod
 " disable Ex mode
 map q: <Nop>
 nnoremap Q <Nop>
+
+" disable Syntasic check
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_open = 0
+
+" for NERD tree
+map <C-N> <leader>nn
+
