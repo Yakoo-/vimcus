@@ -55,3 +55,7 @@ let g:syntastic_check_on_open = 0
 " for NERD tree
 map <C-N> <leader>nn
 
+" expand tab to 4 blanks
+set ts=4
+set expandtab
+
