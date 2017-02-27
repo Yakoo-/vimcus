@@ -59,3 +59,11 @@ map <C-N> <leader>nn
 set ts=4
 set expandtab
 
+" new function for ctrl + h/j/k/l
+nnoremap <C-h> <<
+nnoremap <C-j> ddp
+nnoremap <C-k> ddkP
+nnoremap <C-l> >>
+vnoremap <C-h> <
+vnoremap <C-l> >
+
