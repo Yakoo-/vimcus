@@ -11,22 +11,40 @@ nnoremap tt gt
 nnoremap tr gT
 
 " browsing code easily
-nnoremap 7 2<C-E>
 nnoremap 8 3<C-E>
-nnoremap 9 3<C-Y>
+nnoremap 9 3<C-U>
+nnoremap 44 $
 
 " browsing tags easily
-nnoremap <F9> <C-i>
-nnoremap <F12> g<C-]>
-nnoremap <F10> <C-o>
+nnoremap <F1> g<C-]>
+nnoremap <F3> <C-o>
+nnoremap <F4> <C-i>
+
+" highlight words under cursor
+nnoremap <F2>  gd
+nnoremap <esc> :noh<cr>
+
+" setup code indentation quickly
+vmap <tab> >gv
+vmap <s-tab> <gv
+
+" quick exit
+nmap `` ZZ
 
 " auto completion
-inoremap ){ ){}<left><Enter><Esc>O
-
+imap )_ ) {<enter>}<esc>O
+imap ){ )<enter>{<enter>}<esc>O
+imap {} {<enter>}<esc>O
 
 " for Taglist
 map <silent> <F7> :TlistToggle<cr>
 map <silent> <C-T> :TlistToggle<cr>
+
+" quick add ;
+imap ;; <esc>$a;<esc>
+
+" shift-insert paste
+inoremap <s-insert> <esc>"+p`]a
 
 nnoremap C C<Esc>
 
@@ -57,13 +75,26 @@ map <C-N> <leader>nn
 
 " expand tab to 4 blanks
 set ts=4
+set sts=4
 set expandtab
 
-" new function for ctrl + h/j/k/l
-nnoremap <C-h> <<
-nnoremap <C-j> ddp
-nnoremap <C-k> ddkP
-nnoremap <C-l> >>
-vnoremap <C-h> <
-vnoremap <C-l> >
+" force file format to unix
+set ff=unix
+
+" maximum window
+autocmd GUIEnter * simalt ~x
+
+set shortmess=atI
+
+" for windows file
+set enc=utf-8
+
+" auto change directory
+set autochdir
+
+" set tag file path
+set tags=tags;/,.tags;/
+
+" call command line quickly
+nmap ; :
 
